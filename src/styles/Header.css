@@ -1,0 +1,30 @@
+/* Header.css */
+
+nav {
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #9a4efb;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 18px;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
