@@ -28,3 +28,25 @@ nav ul li a {
     font-size: 18px;
     transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* animace */
+
+nav a:hover {
+    color : #5800ca;
+    text-shadow: 0 0 10px #5800ca;
+}
+
+nav a:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #5800ca;
+    transition: width 300ms;
+}
+
+nav a:hover:after {
+    width: 100%;
+}

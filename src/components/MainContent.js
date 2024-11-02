@@ -6,11 +6,16 @@ function MainContent() {
     return (
         <main>
             <div>
-                <video className='videoTag' autoPlay loop muted>
+                <video className='video' autoPlay loop muted>
                     <source src={BGVid} type='video/mp4' />
                 </video>
             </div>
-            
+            <div className="introduction">
+                <h1>Dan Di Rezo Daněk</h1>
+                <p>tatér od roku 2013</p>
+                <p>tetování Znojmo & Brno</p>
+                <a href="#booking"><button>Booking</button></a>
+            </div>
         </main>
     );
 }

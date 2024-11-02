@@ -1,11 +1,5 @@
 /*Main Content.css*/
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 video {
     position: fixed;
     top: 0;
@@ -14,4 +8,49 @@ video {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+/* textíček :d */
+
+.introduction {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 95vh;
+    padding-left: 15vw;
+}
+
+.introduction h1 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+.introduction p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 0px; 
+}
+
+
+/* knoflík */
+
+button {
+    width: 150px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #18122B;
+    color: #5800ca;
+    font-size: 1.5em;
 }
