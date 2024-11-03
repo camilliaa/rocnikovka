@@ -16,7 +16,6 @@ video, .bg {
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    color: white;
     height: 95vh;
     padding-left: 15vw;
 }
@@ -24,19 +23,20 @@ video, .bg {
 .introduction h1 {
     font-size: 45px;
     margin-bottom: 5px;
-    line-height: 1.1;
+    color: white;
 }
 
-.introduction p {
+.introduction a {
     font-size: 20px;
-    line-height: 1.2;
-    margin-top: 0px; 
+    padding: 5px;
+    color: white;
+    text-decoration: none;
 }
 
 
 /* knoflík */
 
-button {
+.introduction button {
     width: 150px;
     height: 60px;
     border: 3px solid white;
@@ -49,8 +49,8 @@ button {
     font-weight: 600;
 }
 
-button:hover {
-    background: #18122B;
+.introduction button:hover {
+    background-color: #18122B;
     color: #5800ca;
     font-size: 1.5em;
 }
