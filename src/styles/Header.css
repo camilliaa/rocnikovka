@@ -26,11 +26,9 @@ nav ul li a {
     text-decoration: none;
     padding: 8px 12px;
     font-size: 18px;
-
 }
 
 /* animace */
-
 nav a:hover {
     color : #5800ca;
     text-shadow: 0 0 10px #5800ca;
@@ -52,38 +50,71 @@ nav a:hover:after {
 }
 
 /* logo */
-.logo{
+.logo {
     height: 50px;
 }
-.logo img{
-    height: 200%;   /* musím si pohrát s velikostí */
+
+.logo img {
+    height: 200%;
     padding-left: 2vw;
+    padding-top: 1vh;
 }
 
+/* hamburger icon */
+.hamburger {
+    display: none; /* Defaultně skryté */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10; /* Překrývá ostatní prvky */
+}
 
-/* phone */
+svg{
+    width: 3.5rem;
+    height: auto;
+}
 
+.hide-logo {
+    transition: 0.3s;
+    display: none;
+}
 
-
-
-
+/* phone responsive styles */
 @media screen and (max-width: 768px) {
-    nav ul {
-        display: none;
+    *{
+        transition: 0.3s;
     }
+
+    .hamburger {
+        display: flex; /* Zobrazí hamburger menu na mobilních zařízeních */
+    }
+    nav ul a {
+        font-size: 20px;
+        padding: 9px 13px;
+    }
+
+    nav ul {
+        display: none; /* Skrývá položky menu v mobilním režimu */
+    }
+
     nav ul.active {
-        display: flex;
+        display: flex; /* Zobrazí položky menu, když je třída active */
         flex-direction: column;
         background: #000000;
         position: absolute;
         top: 60px;
         width: 100%;
+        padding-left: 0; /* zarovnání obsahu */
+        margin: 0;
     }
+
     nav ul.active li {
         margin: 10px 0;
     }
+
     nav ul.active li a {
         font-size: 20px;
     }
-    
 }
