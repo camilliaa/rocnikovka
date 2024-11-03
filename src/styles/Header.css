@@ -60,15 +60,15 @@ nav a:hover:after {
     padding-top: 1vh;
 }
 
-/* hamburger icon */
+/* hamburger */
 .hamburger {
-    display: none; /* Defaultně skryté */
+    display: none; 
     flex-direction: column;
     cursor: pointer;
     position: absolute;
     right: 20px;
     top: 15px;
-    z-index: 10; /* Překrývá ostatní prvky */
+    z-index: 10; 
 }
 
 svg{
@@ -81,14 +81,14 @@ svg{
     display: none;
 }
 
-/* phone responsive styles */
+/* phone  */
 @media screen and (max-width: 768px) {
     *{
         transition: 0.3s;
     }
 
     .hamburger {
-        display: flex; /* Zobrazí hamburger menu na mobilních zařízeních */
+        display: flex;
     }
     nav ul a {
         font-size: 20px;
@@ -96,17 +96,18 @@ svg{
     }
 
     nav ul {
-        display: none; /* Skrývá položky menu v mobilním režimu */
+        display: none;
     }
 
     nav ul.active {
-        display: flex; /* Zobrazí položky menu, když je třída active */
+        display: flex;
         flex-direction: column;
         background: #000000;
         position: absolute;
-        top: 60px;
+        top: 0;
+        padding-top: 60px;
         width: 100%;
-        padding-left: 0; /* zarovnání obsahu */
+        padding-left: 0;
         margin: 0;
     }
 

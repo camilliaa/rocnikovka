@@ -1,6 +1,6 @@
 /*Main Content.css*/
 
-video {
+video, .bg {
     position: fixed;
     top: 0;
     left: 0;
