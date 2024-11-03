@@ -1,4 +1,5 @@
 import './App.css';
+import Booking from './components/Booking';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 
@@ -8,7 +9,6 @@ function App() {
     <div className="App">
       <Header />
       <MainContent />
-
 
 
     </div>

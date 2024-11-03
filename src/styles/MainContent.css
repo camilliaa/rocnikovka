@@ -54,3 +54,14 @@ video, .bg {
     color: #5800ca;
     font-size: 1.5em;
 }
+
+/* phone */
+@media screen and (max-width: 768px) {
+    .introduction {
+        text-align: center;
+        padding: 0;
+        align-items: center;
+        margin: 3px;
+    }
+}
+

@@ -13,7 +13,7 @@ function MainContent() {
                 </video>
             </div>
             <div className="introduction">
-                <h1>Dan Di Rezo Daněk</h1>
+                <h1>Dan Dí Rezo Daněk</h1>
                 <a>tatér od roku 2013</a>
                 <a>tetování Znojmo & Brno</a>
                 <button className="booking-button" onClick={() => window.location.href = "#booking"}>Booking</button>
