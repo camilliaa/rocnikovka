@@ -26,7 +26,7 @@ nav ul li a {
     text-decoration: none;
     padding: 8px 12px;
     font-size: 18px;
-    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 /* animace */
@@ -49,4 +49,41 @@ nav a:after {
 
 nav a:hover:after {
     width: 100%;
+}
+
+/* logo */
+.logo{
+    height: 50px;
+}
+.logo img{
+    height: 200%;   /* musím si pohrát s velikostí */
+    padding-left: 2vw;
+}
+
+
+/* phone */
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+    nav ul.active li {
+        margin: 10px 0;
+    }
+    nav ul.active li a {
+        font-size: 20px;
+    }
+    
 }
