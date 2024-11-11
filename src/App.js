@@ -1,17 +1,28 @@
 import './App.css';
-import Booking from './components/Booking';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
-
+import Booking from './pages/Booking';
+import Login from './pages/Login';
+import About from './pages/About';
+import Gallery from './pages/Gallery';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <MainContent />
-
-
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainContent />} /> {/* Domovská stránka */}
+          <Route path="/about" element={<About />} /> {/* O mně */}
+          <Route path="/gallery" element={<Gallery />} /> {/* Galerie */}
+          <Route path="/booking" element={<Booking />} /> {/* Booking */}
+          <Route path="/contact" element={<Contact />} /> {/* Kontakt */}
+          <Route path="/login" element={<Login />} /> {/* Přihlášení */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

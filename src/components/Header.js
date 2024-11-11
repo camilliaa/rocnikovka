@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; 
 import '../styles/Header.css'; 
 import logo from '../img/logoW.png';
 
@@ -11,8 +12,8 @@ function Header() {
 
   return (
     <nav>
-      <div className={`logo ${isOpen ? 'hide-logo' : ''}`}>
-        <img src={logo} alt="Logo" />
+      <div className="logo">
+        <Link to="/"><img src={logo} alt="Logo" /></Link>
       </div>
       
       <div className="hamburger" onClick={toggleMenu}>
@@ -29,12 +30,12 @@ function Header() {
         )}
       </div>
 
-      <ul className={isOpen ? 'active' : ''}>
-        <li><a href="#about">O mně</a></li>
-        <li><a href="#gallery">Galerie</a></li>
-        <li><a href="#booking">Booking</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-        <li><a href="#login">Přihlášení</a></li>
+      <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+        <li><Link to="/about" onClick={toggleMenu}>O mně</Link></li>
+        <li><Link to="/gallery" onClick={toggleMenu}>Galerie</Link></li>
+        <li><Link to="/booking" onClick={toggleMenu}>Booking</Link></li>
+        <li><Link to="/contact" onClick={toggleMenu}>Kontakt</Link></li>
+        <li><Link to="/login" onClick={toggleMenu}>Přihlášení</Link></li>
       </ul>
     </nav>
   );

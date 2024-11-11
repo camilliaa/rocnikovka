@@ -51,13 +51,22 @@ nav a:hover:after {
 
 /* logo */
 .logo {
-    height: 50px;
+    height: 65px;
 }
 
 .logo img {
     height: 200%;
     padding-left: 2vw;
     padding-top: 1vh;
+} 
+
+.logo a:hover {
+    color: inherit;
+    text-shadow: none;
+}
+
+.logo a:after {
+    content: none;
 }
 
 /* hamburger */
@@ -74,11 +83,6 @@ nav a:hover:after {
 svg{
     width: 3.5rem;
     height: auto;
-}
-
-.hide-logo {
-    transition: 0.3s;
-    display: none;
 }
 
 /* phone  */
