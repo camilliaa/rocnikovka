@@ -1,12 +1,19 @@
 import React from 'react';
+import '../styles/About.css'; 
 
-const About = () => {
+function About() {
     return (
-        <div>
-            <h1>About Me</h1>
-            <p>Hello! My name is Camillia. I am a passionate developer with a love for creating web applications. In my free time, I enjoy learning new technologies and improving my coding skills.</p>
+        <div className="about">
+            <h1>O mně</h1>
+            <p>
+                Jsem Dan Dí Rezo Daněk, tatér od roku 2013. 
+                Specializuji se na tetování v Znojmě a Brně. 
+                Mým cílem je vytvořit pro vás co nejlepší tetování, 
+                které bude vyhovovat vašim představám. 
+                Pokud máte zájem o tetování, neváhejte mě kontaktovat.
+            </p>
         </div>
     );
-};
+}
 
 export default About;

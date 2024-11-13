@@ -36,20 +36,23 @@ video, .bg {
 
 /* knoflík */
 
-.introduction button {
-    width: 150px;
-    height: 60px;
+.booking-button {
+    width: 130px;
+    height: 40px;
     border: 3px solid white;
     border-radius: 45px;
     transition: all 0.3s;
     cursor: pointer;
     background: black;
     color: white;
-    font-size: 1.2em;
+
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.introduction button:hover {
+.booking-button:hover {
     background-color: #18122B;
     color: #5800ca;
     font-size: 1.5em;

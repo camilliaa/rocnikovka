@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/MainContent.css'; 
 import BGVid from '../img/background_video.mp4';
 import BGImg from '../img/bgb.png';
+import { Link } from 'react-router-dom'; 
 
 function MainContent() {
     return (
@@ -16,7 +17,7 @@ function MainContent() {
                 <h1>Dan Dí Rezo Daněk</h1>
                 <a>tatér od roku 2013</a>
                 <a>tetování Znojmo & Brno</a>
-                <button className="booking-button" onClick={() => window.location.href = "#booking"}>Booking</button>
+                <Link to='/booking' className="booking-button">Booking</Link>
             </div>
         </main>
     );

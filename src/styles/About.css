@@ -1,0 +1,22 @@
+/* About */
+
+.about{
+    background-color: #191919;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.about h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about p {
+    color: #cccccc;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
