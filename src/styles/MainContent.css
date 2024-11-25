@@ -21,9 +21,12 @@ video, .bg {
 }
 
 .introduction h1 {
-    font-size: 45px;
-    margin-bottom: 5px;
+    font-size: 60px;
+    margin-bottom: -10px;
     color: white;
+    font-family: "Splash", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .introduction a {
@@ -31,6 +34,7 @@ video, .bg {
     padding: 5px;
     color: white;
     text-decoration: none;
+    font-family: "Quicksand", serif;
 }
 
 

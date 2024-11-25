@@ -14,7 +14,7 @@ function MainContent() {
                 </video>
             </div>
             <div className="introduction">
-                <h1>Dan Dí Rezo Daněk</h1>
+                <h1>Dí Rezo Daněk</h1>
                 <a>tatér od roku 2013</a>
                 <a>tetování Znojmo & Brno</a>
                 <Link to='/booking' className="booking-button">Booking</Link>

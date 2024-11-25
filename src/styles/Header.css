@@ -57,8 +57,8 @@ nav a:hover:after {
 
 .logo img {
     height: 200%;
-    padding-left: 2vw;
-    padding-top: 1vh;
+    padding-left: 3vw;
+    padding-top: 1.5vw;
 } 
 
 .logo a:hover {
@@ -90,6 +90,10 @@ svg{
 @media screen and (max-width: 768px) {
     *{
         transition: 0.3s;
+    }
+
+    .logo{
+        height: 45px;
     }
 
     .hamburger {
