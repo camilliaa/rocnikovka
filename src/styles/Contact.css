@@ -1,18 +1,18 @@
-/*About*/
+/*Contact.css*/
 
-.about {
+.contact {
     width: 70%;
     margin: 0 auto;
     padding-top: 50px;
 }
 
-.about h1 {
+.contact h1 {
     color: #ffffff;
     font-size: 40px;
     text-align: center;
 }
 
-.about p {
+.contact p {
     color: #cccccc;
     font-size: 20px;
     font-family: "Quicksand", serif;
@@ -25,7 +25,7 @@
 
 /* phony */
 @media screen and (max-width: 768px) {
-    .about{
+    .contact{
         width: 95%;
     }
 }
