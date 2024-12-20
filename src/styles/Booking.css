@@ -126,5 +126,8 @@
     .booking {
         width: 95%;
     }
-    
+
+    .reference-photos {
+        display: block;
+    } 
 }
